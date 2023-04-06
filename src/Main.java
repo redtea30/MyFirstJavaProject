@@ -34,8 +34,7 @@ public class Main {
         System.out.println(myValue);
         System.out.println(myValue);
 
-
-
-
     }
+
+
 }

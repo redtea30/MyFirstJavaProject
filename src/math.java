@@ -12,6 +12,9 @@ public class math {
         System.out.println(Math.random());
         //output random number from 0-1000
         System.out.println(Math.random()*1000);
+        //Boolean
+        System.out.println(10==15);
+        System.out.println(10==10);
 
 
 
