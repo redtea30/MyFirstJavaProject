@@ -48,12 +48,43 @@ public class arrayExercise {
         System.out.println("i = " + i);//1
         System.out.println("++i = " + i++);//后加一
         System.out.println("i++ = " + ++i);//先加一
-        i =1;
+        i = 1;
         int j = i++;
         System.out.println("j = " + j);//2
         int k = i++ * ++j + ++i * j++;
         System.out.println("i = " + i);//1
         System.out.println("j = " + j);//2
         System.out.println("k = " + k);//6
+
+        //
+        int num1, num2, num3, num4, num5, num6;
+        num1 = 1;
+        num2 = 2;
+        num3 = 3;
+        num4 = 4;
+        num5 = 5;
+        num1 *= 2;
+        num2 /= 2;
+        num3 += 3;
+        num4 -= 4;
+        num5 %= 3;
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println(num3);
+        System.out.println(num4);
+        System.out.println(num5);
+
+        i = 1;//int i已经定义过
+        i *= 0.1;
+        System.out.println(i);
+
+        float float2 = 1;
+        float2 *= 0.1;
+        System.out.println(float2);
+        float2 = 1;
+//        float2 = 0.1 * float2;//java: incompatible types: possible lossy conversion from double to float
+        float2 = (float) (0.1 * float2);
+        System.out.println(float2);
+
     }
 }
