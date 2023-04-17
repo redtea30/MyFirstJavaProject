@@ -20,14 +20,11 @@ public class forCycle {
             System.out.println("false");
         }
 
-
-
-
-
-
-
-
-
+        for (int i1 = 1; i1 <= 10; i1++) {
+            System.out.print(i1);
+        }
+        System.out.println();
+        System.out.println((long)(Math.random()*100000000));
 
 
     }
