@@ -6,7 +6,7 @@
 
 
 */
-class AriTest {
+public class AriTest {
     public static void main(String[] args) {
         //*******************************
         //除法： /
@@ -79,6 +79,17 @@ class AriTest {
         //结论：++ 或 -- 运算，不会改变变量的数据类型！
 
         //+ :连接符，只适用于String与其他类型的变量间的运算，而且运算的结果也是String类型。
+
+        int randomNum1 = (int) (Math.random() * 900) + 100;
+        int unitsDigit = randomNum1 % 10;
+        int tensDigit = randomNum1 / 10 % 10;
+        int hundredsDigit = randomNum1 / 100 % 10;
+        System.out.println("RandomNum: "+randomNum1+" Unitsdigits: " + unitsDigit + " TensDigits: " + tensDigit + " HundredsDigits: " + hundredsDigit);
+
+        //阴间测试题
+        int i5 = 0;
+        i5=i5++;
+        System.out.println(i5);
 
     }
 }
