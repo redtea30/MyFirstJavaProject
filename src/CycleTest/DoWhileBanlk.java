@@ -47,7 +47,7 @@ public class DoWhileBanlk {
                     break;
                 case 4:
                     System.out.println("退出中..");
-                    quit =false;
+                    quit = false;
                     break;
                 default:
                     System.out.println("请重新输入");
