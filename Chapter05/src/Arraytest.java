@@ -65,7 +65,7 @@ class Arraytest {
         */
 
         //n个学生的成绩
-        Scanner input = new Scanner(System.in);
+/*        Scanner input = new Scanner(System.in);
         System.out.println("请输入有几个学生");
         int peopleNum = input.nextInt();
         int[] scores = new int[peopleNum];
@@ -93,8 +93,51 @@ class Arraytest {
             }
             System.out.println("student" + i + " score is " + scores[i] + " grade is " + grade);
         }
-        input.close();
+        input.close();*/
 
-
+        //练习创建数组
+        //way1
+        int[] array1;
+        array1 = new int[]{1, 2, 3, 4, 5};
+        for (int i = 0; i < array1.length; i++) {
+            System.out.print(array1[i]);
+        }
+        System.out.println();
+        //way2
+        int[] array2 = {1, 2, 3, 4, 5};
+        for (int i = 0; i < array2.length; i++) {
+            System.out.print(array2[i]);
+        }
+        System.out.println();
+        //way3
+        int[] array3 = new int[5];
+        array3 = new int[]{1, 2, 3, 4, 5};
+        //way4
+        int[] array4 = new int[5];
+        array4[0] = 1;
+        array4[1] = 2;
+        array4[2] = 3;
+        array4[3] = 4;
+        array4[4] = 5;
+        //boolean
+        boolean[] array5 = new boolean[5];
+        for (int i = 0; i < array5.length; i++) {
+            System.out.print(array5[i]);
+        }
+        System.out.println();
+        //boolean
+        boolean[] array6 = new boolean[5];
+        array6 = new boolean[]{true, true, true, true, true};
+        for (int i = 0; i < array6.length; i++) {
+            System.out.print(array6[i]);
+        }
+        System.out.println();
+        //char
+        char[] array7 = new char[5];
+        array7 = new char[]{'男','女','老','少','贫'};
+        for (int i = 0; i < array7.length; i++) {
+            System.out.print((int)array7[i]+"\t");
+        }
+        System.out.println();
     }
 }
