@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class multidimensionalArray {
     public static void main(String[] args) {
@@ -169,24 +170,271 @@ public class multidimensionalArray {
         }
         //总结：现阶段我觉得超难，需要加大力度训练
 
-
-
-
-
-
-
-
-
-/*        for (i = 0; i < num.length; i++) {
-            num[i] = (int) (Math.random() * (30) + 1);
-            boolean flag = false;
-            while (true){
-            for (j = 0; j < i; j++) {
-
+        //测试方法一：有缺陷，会生成一样的数字
+        int[] num1 = new int[30];//30为最大值，生成30个不重复的数字
+        for (int t = 0; t < num1.length; t++) {
+            num1[t] = (int) (Math.random() * 30 + 1);
+            for (int y = 0; y < t; y++) {
+                if (num1[t] == num1[y]) {
+                    t--;
+                    break;
+                }
             }
+        }
+        System.out.println();
+        for (int t = 0; t < num1.length; t++) {
+            System.out.print("\t" + num1[t]);
+        }
+
+        //老师的方法
+        int[] arr = new int[30];
+        for (i = 0; i < arr.length; i++) {// [0,1) [0,30) [1,31)
+            arr[i] = (int) (Math.random() * 30) + 1;
+
+            for (j = 0; j < i; j++) {
+                if (arr[i] == arr[j]) {
+                    i--;
+                    break;
+                }
+            }
+        }
+        System.out.println();
+        for (i = 0; i < arr.length; i++) {
+            System.out.print("\t" + arr[i]);
+        }
+
+        //老师的方法2
+        arr = new int[30];
+        for (i = 0; i < arr.length; i++) {// [0,1) [0,30) [1,31)
+            arr[i] = (int) (Math.random() * 30) + 1;
+
+            flag = false;
+            while (true) {
+                for (j = 0; j < i; j++) {
+                    if (arr[i] == arr[j]) {
+                        flag = true;
+                        break;
+                    }
+                }
+                if (flag) {
+                    arr[i] = (int) (Math.random() * 30) + 1;
+                    flag = false;
+                    continue;
+                }
+                break;
+            }
+        }
+        System.out.println();
+
+        for (i = 0; i < arr.length; i++) {
+            System.out.print("\t" + arr[i]);
+        }
+
+
+        //
+        System.out.println();
+
+        int maxLimit = 30;
+        int minLimit = 1;
+        int[] list = new int[maxLimit];
+        for (int g = 0; g < list.length; g++) {
+            list[g] = (int) (Math.random() * maxLimit - minLimit + 1) + 1;
+
+            flag = false;
+            while (true) {
+                for (int h = 0; h < g; h++) {
+                    if (list[g] == list[h]) {
+                        flag = true;
+                        break;
+                    }
+                }
+                if (flag) {
+                    list[g] = (int) (Math.random() * maxLimit - minLimit + 1) + 1;
+                    flag = false;
+                    continue;
+                }
+                break;
+            }
+
+
+        }
+        for (int g = 0; g < list.length; g++) {
+            System.out.print("\t" + list[g]);
+        }
+
+
+        //杨辉三角复习
+        //杨辉三角
+/*        **案例3：**使用二维数组打印一个 10 行杨辉三角。
+        提示：
+        1. 第一行有 1 个元素, 第 n 行有 n 个元素
+        2. 每一行的第一个元素和最后一个元素都是 1
+        3. 从第三行开始, 对于非第一个元素和最后一个元素的元素。即
+        yanghui[i][j] = yanghui[i-1][j-1] + yanghui[i-1][j];*/
+/*        if (g > 1) {
+            yanghuisanjiao[g][h] = yanghuisanjiao[g - 1][h - 1] + yanghuisanjiao[g - 1][h];
         }*/
 
 
+        System.out.println();
+        int[][] yanghuisanjiao = new int[10][];
+        for (int g = 0; g < yanghuisanjiao.length; g++) {
+            yanghuisanjiao[g] = new int[g + 1];
+            yanghuisanjiao[g][g] = yanghuisanjiao[g][0] = 1;
+            for (int h = 1; h < yanghuisanjiao[g].length - 1; h++) {
+                yanghuisanjiao[g][h] = yanghuisanjiao[g - 1][h - 1] + yanghuisanjiao[g - 1][h];
+            }
+        }
+        for (int g = 0; g < yanghuisanjiao.length; g++) {
+            for (int h = 0; h < yanghuisanjiao[g].length; h++) {
+
+
+            }
+        }
+
+
+        for (int g = 0; g < yanghuisanjiao.length; g++) {
+            for (int h = 0; h < yanghuisanjiao[g].length; h++) {
+                System.out.print(yanghuisanjiao[g][h] + "\t");
+            }
+            System.out.println();
+        }
+
+//案例：遍历扑克牌
+        /*        提示：使用两个字符串数组，分别保存花色和点数，再用一个字符串数组保存最后的扑克牌。*/
+        String[] hua = {"黑桃", "红桃", "梅花", "方片"};
+        String[] dian = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
+        String[][] gambling = new String[hua.length][];
+        for (int g = 0; g < hua.length; g++) {
+            gambling[g] = new String[dian.length];
+            for (int h = 0; h < dian.length; h++) {
+                gambling[g][h] = hua[g] + dian[h];
+                System.out.print(gambling[g][h] + " ");
+            }
+            System.out.println();
+        }
+
+        //way2
+        System.out.println("way2");
+        i = 0;
+        String[] pai = new String[hua.length * dian.length];
+        for (int g = 0; g < hua.length; g++) {
+            for (int h = 0; h < dian.length; h++) {
+                pai[i++] = hua[g] + dian[h];
+                System.out.print(gambling[g][h] + " ");
+            }
+            System.out.println();
+
+        }
+
+
+
+/*        从键盘输入一个整数（1~20） ，则以该数字为矩阵的大小，把1,2,3…n*n 的数字按照顺时针螺旋的形式填入其中。
+        例如： 输入数字2，则程序输出：
+        1 2
+        4 3
+        输入数字3，则程序输出：
+        1 2 3
+        8 9 4
+        7 6 5
+        输入数字4， 则程序输出：
+        1    2    3    4
+        12  13  14  5
+        11  16  15  6
+        10   9   8    7*/
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("请输入矩阵的尺寸");
+        //int length = input.nextInt();
+        int length = 4;//测试
+        int x = 0, y = 0;//当前坐标
+        //int[][] matrix = new int[length][length];//测试
+        int[][] matrix = new int[length][];
+        for (x = 0; x < length; x++) {
+            matrix[x] = new int[length];
+        }//使用这个不执行
+        x = 0;//x没有归零出错！！！！！！操
+        int total = length * length;
+        int k = 1;//k用来判断指针的方向
+        for (int m = 1; m < total + 1; m++) {
+            if (k == 1) {
+                if (x < length && matrix[y][x] == 0) {
+                    matrix[y][x++] = m;
+                } else {
+                    m--;
+                    x--;
+                    y++;
+                    k = 2;
+                }
+            } else if (k == 2) {
+                if (y < length && matrix[y][x] == 0) {
+                    matrix[y++][x] = m;
+                } else {
+                    y--;
+                    m--;
+                    k = 3;
+                    x--;
+                }
+            } else if (k == 3) {
+                if (x >= 0 && matrix[y][x] == 0) {
+                    matrix[y][x--] = m;
+                } else {
+                    m--;
+                    y--;
+                    k = 4;
+                    x++;
+                }
+            } else if (k == 4) {
+                if (y >= 0 && matrix[y][x] == 0) {
+                    matrix[y--][x] = m;
+                } else {
+                    y++;
+                    m--;
+                    k = 1;
+                    x++;
+                }
+            }
+        }
+        System.out.println();
+
+        for (int m = 0; m < length; m++) {
+            for (int n = 0; n < length; n++) {
+                System.out.print(matrix[m][n] + "\t");
+            }
+            System.out.println();
+        }
+        input.close();
+
+        //创建回文总结
+        /*
+                for (x = 0; x < length; x++) {
+            matrix[x] = new int[length];
+       这个为什么会导致代码不执行啊！！！！
+        为啥一定要int[][] matrix=new int[length][length];
+        */
+        int testNum = 5;
+        int[][] test1 = new int[testNum][];
+        for (int n = 0; n < testNum; n++) {
+            test1[n] = new int[testNum];
+        }
+
+        for (int n = 0; n < testNum; n++) {
+            for (int m = 0; m < testNum; m++) {
+                System.out.print(test1[n][m]);
+            }
+            System.out.println();
+        }
+        System.out.println(test1[0]);
+        System.out.println(test1[1]);
+
+        int[][] test2 = new int[5][5];
+        for (int n = 0; n < testNum; n++) {
+            for (int m = 0; m < testNum; m++) {
+                System.out.print(test2[n][m]);
+            }
+            System.out.println();
+        }
     }
 }
 
