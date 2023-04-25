@@ -13,9 +13,10 @@ public class huixingshu2 {
         int minX = 0;
         int minY = 0;
 
-        while (minX <= maxX) {
+        //没想明白，暂停。太费时间了
+/*        while (minX <= maxX) {
             for ()
 
-        }
+        }*/
     }
 }
