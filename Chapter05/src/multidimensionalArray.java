@@ -410,7 +410,7 @@ public class multidimensionalArray {
         /*
                 for (x = 0; x < length; x++) {
             matrix[x] = new int[length];
-       这个为什么会导致代码不执行啊！！！！
+       这个为什么会导致代码不执行啊！！！！----->原因：x没有归零
         为啥一定要int[][] matrix=new int[length][length];
         */
         int testNum = 5;
