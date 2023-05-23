@@ -1,3 +1,4 @@
+/*
 package exer07;
 
 class Person {
@@ -9,7 +10,7 @@ class Person {
     }
 }
 
-class Student extends Person {
+public class Student extends Person {
     protected String school = "pku";
 
     public String getInfo() {
@@ -48,4 +49,4 @@ public class InstanceTest {
         }
 
     }
-}
+}*/

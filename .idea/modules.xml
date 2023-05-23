@@ -3,11 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Chapter05/Chapter05.iml" filepath="$PROJECT_DIR$/Chapter05/Chapter05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter10api/Chapter10api.iml" filepath="$PROJECT_DIR$/Chapter10api/Chapter10api.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyFirstJavaProject.iml" filepath="$PROJECT_DIR$/MyFirstJavaProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter06/chapter06.iml" filepath="$PROJECT_DIR$/chapter06/chapter06.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter07/chapter07.iml" filepath="$PROJECT_DIR$/chapter07/chapter07.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter08/chapter08.iml" filepath="$PROJECT_DIR$/chapter08/chapter08.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter09/chapter09.iml" filepath="$PROJECT_DIR$/chapter09/chapter09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter12collection_map/chapter12collection_map.iml" filepath="$PROJECT_DIR$/chapter12collection_map/chapter12collection_map.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter5/com/com.iml" filepath="$PROJECT_DIR$/Chapter5/com/com.iml" />
     </modules>
   </component>
