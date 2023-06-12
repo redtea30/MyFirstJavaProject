@@ -10,6 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/chapter08/chapter08.iml" filepath="$PROJECT_DIR$/chapter08/chapter08.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter09/chapter09.iml" filepath="$PROJECT_DIR$/chapter09/chapter09.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter12collection_map/chapter12collection_map.iml" filepath="$PROJECT_DIR$/chapter12collection_map/chapter12collection_map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter13/chapter13.iml" filepath="$PROJECT_DIR$/chapter13/chapter13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter16/chapter16.iml" filepath="$PROJECT_DIR$/chapter16/chapter16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter17 reflection/chapter17 reflection.iml" filepath="$PROJECT_DIR$/chapter17 reflection/chapter17 reflection.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter5/com/com.iml" filepath="$PROJECT_DIR$/Chapter5/com/com.iml" />
     </modules>
   </component>
