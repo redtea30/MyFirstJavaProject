@@ -1,5 +1,3 @@
-package SparseArr;
-
 /**
  * ClassName:sparsearr
  * Package:DataStructual

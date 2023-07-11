@@ -1,5 +1,3 @@
-package SparseArr;
-
 /**
  * ClassName:sprasearr
  * Package:DataStructral
@@ -35,6 +33,8 @@ public class sprasearr {
         chessArr1[2][3] = 2;
         chessArr1[4][5] = 2;
         System.out.println();
+
+
 
 
     }
